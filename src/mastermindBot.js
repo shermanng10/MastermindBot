@@ -2,6 +2,7 @@ import path from 'path'
 import Bot from 'slackbots'
 import db from './database/db'
 import mongoose from 'mongoose'
+import config from '../config'
 import { guessValidator } from './lib/Validations'
 import { User } from './models/User'
 import { Mastermind } from './models/Mastermind'
@@ -127,7 +128,7 @@ class MastermindBot extends Bot {
 }
 
 let settings = {
-	token: 'xoxb-58310273430-LsIay7fasCPp3kurfZPTvIyA',
+	token: config['SLACK_API_TOKEN'],
 	name: 'mastermind'
 }
 
