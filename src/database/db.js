@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import config from './config'
+import {config} from './config'
 
 mongoose.connect(config.db, {server:{socketOptions:{keepAlive:1}}})
 
@@ -12,3 +12,5 @@ db.on('error', () => {
 db.once('open', () => {
   console.log(`Connected to ${config.db}`)
 });
+
+module.exports = { db }

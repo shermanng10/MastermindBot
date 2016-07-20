@@ -1,5 +1,5 @@
 let validGuessColors = ["red", "blue", "green", "yellow", "purple", "teal"]
-let validKeyColors = ["black", "white"]
+let validKeyColors = ["black", "white", "blank"]
 
 function _validateRowLength(rowArray, length){ 
 	return rowArray.length === length
