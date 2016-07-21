@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d build",
-    "start": "node ./bin/www"
+    "start": "node build/mastermindBot.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "mongodb": "^2.2.1",
+    "mongoose": "^4.5.5",
     "slackbots": "^0.5.1"
   },
   "devDependencies": {
